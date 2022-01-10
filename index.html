@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content=-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1, maximum-scale=1"/>
+
+<link rel="stylesheet" href="estilos.css" type="text/css"/>
+<script language="javascript" type="text/javascript" src="funciones.js"></script>
+
+<title>Índice de Masa Corporal</title>
+</head> 
+<body>
+     <div class="contenedor">
+        <header>
+        <h1>CALCULADORA DEL ÍNDICE DE MASA CORPORAL (IMC)</h1>
+        <h2>El sobre peso puede causar la elevación d ela concentración  de colesterol total y de la presión arterial, y aumenta el riesgo de sufrir la enfermedad arterial coronaria. La obesidad aumenta las probabilidades de que se presenten otros factores de riesgo cardiovascular, en especial, presión arterial alta,colesterol elevado y diabetes.</h2>
+        </header>
+        <main>
+             <article>
+             Una medida de la obesidad se detemina mediante el índice de masa corporal (IMC), que se calcula dividiendo los kilogramos de peso por el cuadrado de la estatura en metros (IMC=peso [kg]/Estatura[m2]). Segun el Instituto Nacional del Corazón, los Pulmones y la Sangre de los Estados Unidos (NHLBI), el sobrepeso se define como un IMC de más de 25. Se considera que una persona es obesa si su IMC es superior a 30. Usted puede determinar su IMC  con la calculadora que se encuentra a continuación. Con la sifra del IMC puede averiguar su composición corporal en la tabla que aparece debajo de la calculadora.
+             </article>
+             <aside>
+                   <h2>Para calcular su índice de masa corporal, ingrese su estatura y peso</h2>
+                   <section class="formulario">
+                      <p id="sistema">Sistema Métrico</p>
+                      <form name="frmimc" action="#" method="get">
+                      <input type="text" name="txtestatura" placeholder="Cuanto mides?" id="caja" required/>
+                      <p>Estatura en centímetros</p>
+                      <input type="text" name="txtpeso" placeholder="Cuanto pesas?" id="caja" required/>
+                      <p>Peso en Kilogramos</p>
+                      <button type="button" name="btncalcular" id="boton" onclick="imc(frmimc);" >Calcular</button>
+                      <button type="reset" name="btnlimpiar" id="boton">Limpiar Datos</button>
+                      <p id="Resultado">Resultado:<input type="text" name="txtresultado" id="caja" readonly="readonly"/></p>                      </section>
+             </aside>
+        </main>
+        <footer>
+            <table id="tabla">
+            <tr>
+               <td id="titulotabla">Composición corporal</td>
+               <td id="titulotabla">Índice de masa corporal</td>
+            </tr>
+            <tr>
+               <td id="filatabla">Peso inferior al normal</td>
+               <td id="filatabla">Menos de 10.5</td>
+            </tr>
+            <tr>
+               <td id="filatabla">Normal</td>
+               <td id="filatabla">10.5 - 24.9</td>
+            </tr>
+            <tr>
+               <td id="filatabla">Peso superior al normal</td>
+               <td id="filatabla">25.0 - 29.9</td>
+            </tr>
+            <tr>
+               <td id="filatabla">Obesidad</td>
+               <td id="filatabla">25.0 - 29.9</td>
+            </tr>  
+            </table>
+        </footer>
+     </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
